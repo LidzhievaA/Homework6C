@@ -25,15 +25,15 @@ else Console.WriteLine("Прямые параллельны и не пересе
 
 
 
-double CoordinateX(int b_1, int k_1, int b_2, int k_2)
+double CoordinateX(int b01, int k01, int b02, int k02)
 {
-    double x = (double)(b_2 - b_1) / (k_1 - k_2);
+    double x = (double)(b02 - b01) / (k01 - k02);
     return x;
 }
 
-double CoordinateY(double x, int b_1, int k_1)
+double CoordinateY(double x, int b01, int k01)
 {
-    double y = (double)k_1 * x + b_1;
+    double y = (double)k01 * x + b01;
     return y;
 }
 
